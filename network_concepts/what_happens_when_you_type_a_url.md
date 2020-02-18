@@ -44,7 +44,27 @@ Hence, the TCP connection is established for data transmission.
 *The browser sends an HTTP request to the webserver*
 
 1. Since the TCP connections is established it is time to start transferring data.
-2. The browser will send a `GET` request
+2. The browser will send a `GET` request (or) `POST` request. 
+3. This request will also contain additional information such as the brwoser identitication (User-Agent) header; types of requests (Accept Header), and Connection Header - "keep-alive"; to keep the TCP connection alive. 
+
+**Server handles the request and sends back a response**    
+1. The server contains a webserver, that recieves the request and passes it to a request handler to read and generate a response.
+2. request handler - is a ruby / python script - response can be a JSON, XML or HTML payload.      
+
+
+The server sends out a HTTP response.      
+1. The server response contains:
+    a. Web-Page that we requested.       
+    b. Compression type (Content-Encoding)     
+    c. Any cookies to set?     
+    d. Privacy Information   
+    
+  
+Finally,     
+
+1. The browser displays the HTML content in phases. First it will render bare bon HTML skeleton.    
+2. Check HTML tags, and send out GET requests      That's it!!!
+
 
 
 

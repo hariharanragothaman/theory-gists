@@ -24,6 +24,6 @@ Caches are vital for regulating network traffic and improving data transfer time
         4. These requests are sent using small data packets that contain information such as content of the request and the IP address.   
         5. Here routing tables are used to figure out which way is the fastest possible for the packet to reach its detination.    
         
-** OK, we now, have the mapping -- So what happens now?? ***     
+**OK, we now, have the mapping -- So what happens now??**     
 
 The browser initiates a TCP connection with the server.

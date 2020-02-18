@@ -26,4 +26,28 @@ Caches are vital for regulating network traffic and improving data transfer time
         
 **OK, we now, have the mapping -- So what happens now??**     
 
-The browser initiates a TCP connection with the server.
+The browser initiates a **TCP connection** with the server.
+
+1. Once we have the IP-Address, the browser initiates a TCO connection with the server.    
+2. TCP is the most common protocol for many type of HTTP requests.    
+3. To transfer packets between your client and the server, the TCP connection is established using TCP/IP - three way handshake.    
+
+
+**So What is the TCP 3 way hand-shake??**
+1. The client machine sends a SYN packet to the server over the internt, asking if it is open for new connections.   
+2. If the server has open ports, that can accept and initiate new connections, it will respond using a ACK for the SYN packet using a SYN/ACK packet.      
+3. The client will recieve the SYN/ACK packet from the server and will acknowledge it by sending an ACK packet.     
+
+Hence, the TCP connection is established for data transmission.       
+
+**After TCP connection is established**
+*The browser sends an HTTP request to the webserver*
+
+1. Since the TCP connections is established it is time to start transferring data.
+2. The browser will send a `GET` request
+
+
+
+
+
+
